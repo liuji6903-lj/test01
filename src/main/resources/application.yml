@@ -1,0 +1,21 @@
+server.port: 454
+server.servlet.context-path: /cn
+name: 测试
+url: https://www.baidu.com
+content: "name:${name},url:${url}"
+student:
+  name: 测试name
+  age: 22
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp     
+datasource:
+  url: jdbc:mysql://127.0.0.1:3306/student?characterEncoding=UTF-8
+  username: root
+  password: root
+  driver-class-name: com.mysql.jdbc.Driver
+jpa:
+  hibernate:
+    ddl-auto: update #新增数据库连接必备的参数
